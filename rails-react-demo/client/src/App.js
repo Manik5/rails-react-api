@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import Uploader from './uploader';
 
 const fetchTestDatas = function () {
   fetch('/api/v1/tests')
@@ -14,6 +15,7 @@ function App() {
       <button onClick={fetchTestDatas}>
         Fetch Test Datas
       </button>
+      <Uploader />
     </div>
   );
 }
